@@ -2,7 +2,7 @@
 # ------------------------------------------------------------------
 # [@WaltSpence of @MakeGoCo] 
 #	    WxGet
-#          This bash script installs google fonts on debian systems
+#          Get the weather forcast for any location in the terminal.
 #          This is licensed under the Unlicense as seen at this link
 #          http://unlicense.org/UNLICENSE
 # ------------------------------------------------------------------
@@ -10,7 +10,7 @@
 NAME=wxget
 VERSION=0.1
 SUBJECT=WES-1116-002
-USAGE="Get the weather forcast for your area in the terminal"
+USAGE="Get the weather forcast for any location in the terminal"
 CHANGELOG="Created project"
 
 # --- Options processing -------------------------------------------
