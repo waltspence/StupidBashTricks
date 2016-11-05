@@ -1,0 +1,39 @@
+#!/bin/bash
+# ------------------------------------------------------------------
+# [@WaltSpence of @MakeGoCo] 
+#	    WxGet
+#          This bash script installs google fonts on debian systems
+#          This is licensed under the Unlicense as seen at this link
+#          http://unlicense.org/UNLICENSE
+# ------------------------------------------------------------------
+
+NAME=wxget
+VERSION=0.1
+SUBJECT=WES-1116-002
+USAGE="Get the weather forcast for your area in the terminal"
+CHANGELOG="Created project"
+
+# --- Options processing -------------------------------------------
+
+WHITE=`tput setaf 7`
+BLUE=`tput setaf 4`
+WBR=`tput setab 7`
+RESET=`tput sgr0`
+CONFIRMED="\n ${BLUE}${WBR}Awesome. Here we go...${RESET}"
+ABORT="\n Well then...good day! "
+BELL='tput bel'
+
+# --- Start --------------------------------------------------------
+echo -e "\n ${BLUE}${WBR}Welcome to $NAME v. $VERSION ${RESET}\n $USAGE
+ "
+# Flags
+while getopts "l:" OPTION
+do
+    case $OPTION in
+        l)
+            OPT="$OPT $OPTARG"
+            curl wttr.in/$OPT
+            ;;
+    esac
+done
+
