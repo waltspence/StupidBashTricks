@@ -8,7 +8,15 @@ Get the your or any locations weather in the terminal. Use the -l flag to specif
 ```bash
 wxget -l Austin
 ```
-<pre>   <strong> or </strong>   </pre>
+<strong> or </strong>
+
 ```bash
 wxget -l 73301
 ```
+
+<strong>Update -</strong> 
+A simple one command update for debian linux using apt-get.
+<br /><br />
+<strong>Usage</strong> 
+```bash
+sudo update
