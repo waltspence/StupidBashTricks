@@ -1,9 +1,9 @@
 # Stupid Bash Tricks
 Just a set of useful useless bash scripts
 
-<strong>Wxget -</strong> 
+##Wxget
 Get the your or any locations weather in the terminal. Use the -l flag to specify the location you wish to get the weather for.
-<br /><br />
+
 <strong>Examples</strong> 
 ```bash
 wxget -l Austin
@@ -13,10 +13,11 @@ wxget -l Austin
 ```bash
 wxget -l 73301
 ```
+<hr>
 
-<strong>Update -</strong> 
+##Update
 A simple one command update for debian linux using apt-get.
-<br /><br />
+
 <strong>Usage</strong> 
 ```bash
 sudo update
