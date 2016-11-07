@@ -1,0 +1,39 @@
+#!/bin/sh
+#!/bin/bash
+# ---------------------------------------------------------------------
+# [@WaltSpence of @MakeGoCo] 
+#	  Updater
+#          A simple command to update debian based linux [sudo update]
+#          This is licensed under the Unlicense as seen at this link
+#          http://unlicense.org/UNLICENSE
+# ---------------------------------------------------------------------
+
+NAME=Updater
+VERSION=1.0
+SUBJECT=WES-1116-005
+USAGE="Update debian based linux systems with one simple command"
+CHANGELOG="Created project"
+
+# --- Options processing -------------------------------------------
+BELL='tput bel'
+
+# --- Start --------------------------------------------------------
+
+echo "\nUpdating with apt-get\n"
+apt-get update
+apt-get upgrade -y
+
+read -r -p "Do you want to perform a distro upgrade? Y/N " response
+case $response in
+    [yY][eE][sS]|[yY])
+	apt-get dist-upgrade -y
+	apt-get autoclean
+	apt-get autoremove -y
+        ;;
+    *)
+	apt-get autoclean
+	apt-get autoremove -y
+        ;;
+esac
+
+notify-send "Update Complete!"
