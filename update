@@ -1,7 +1,6 @@
-#!/bin/sh
 #!/bin/bash
 # ---------------------------------------------------------------------
-# [@WaltSpence of @MakeGoCo] 
+# [@WaltSpence] 
 #	  Updater
 #          A simple command to update debian based linux [sudo update]
 #          This is licensed under the Unlicense as seen at this link
